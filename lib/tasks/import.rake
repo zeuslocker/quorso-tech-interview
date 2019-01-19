@@ -8,6 +8,6 @@ namespace :import do
 
   task transactions: :environment do
     file_path = Rails.root.join('support/transactions.csv')
-    Imports::Transactions.run(file_path)
+    Imports::Transactions.call({file_path: file_path})
   end
 end

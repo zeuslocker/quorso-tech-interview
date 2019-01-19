@@ -7,6 +7,8 @@ gem 'rails', '5.2.2'
 gem 'pg', '1.1.3'
 gem 'puma', '3.12.0'
 gem 'webpacker', '3.5.5'
+gem 'activerecord-import', '~> 0.15.0'
+gem 'trailblazer-operation'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -15,6 +17,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '3.8.1'
   gem 'factory_bot_rails', '4.11.1'
+  gem 'pry'
 end
 
 group :development do
